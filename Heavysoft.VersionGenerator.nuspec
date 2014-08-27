@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Heavysoft.VersionGenerator</id>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <authors>Der_Meister</authors>
     <owners>Der_Meister</owners>
     <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
