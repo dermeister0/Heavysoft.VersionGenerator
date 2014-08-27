@@ -1,0 +1,2 @@
+Heavysoft.VersionGenerator
+==========================
