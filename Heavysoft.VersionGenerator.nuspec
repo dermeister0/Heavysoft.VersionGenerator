@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Heavysoft.VersionGenerator</id>
+    <version>1.0.0.0</version>
+    <authors>Der_Meister</authors>
+    <owners>Der_Meister</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/dermeister0/Heavysoft.VersionGenerator</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Assembly version number generator for Heavysoft projects.</description>
+    <copyright>Copyright © 2014 Der_Meister</copyright>
+  </metadata>
+  <files>
+    <file src="HeavysoftVersion.tt" target="Content\Properties" />
+  </files>
+</package>
