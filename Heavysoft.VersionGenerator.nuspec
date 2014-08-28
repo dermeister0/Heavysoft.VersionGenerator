@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Heavysoft.VersionGenerator</id>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <authors>Der_Meister</authors>
     <owners>Der_Meister</owners>
     <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
@@ -12,6 +12,7 @@
     <copyright>Copyright © 2014 Der_Meister</copyright>
   </metadata>
   <files>
-    <file src="HeavysoftVersion.tt" target="Content\Properties" />
+    <file src="HeavysoftVersion.ps1" target="Content\Properties" />
+    <file src="HeavysoftVersion.cs.template" target="Content\Properties" />
   </files>
 </package>
