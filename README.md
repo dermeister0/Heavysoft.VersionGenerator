@@ -11,3 +11,8 @@ Project file changes
     <Target Name="BeforeBuild">
       <Exec Command="$(PowerShellExe) -NonInteractive -Command &quot;&amp;{ $(ProjectDir)Properties\HeavysoftVersion.ps1 }&quot;" />
     </Target>
+
+.gitignore
+----------
+
+    HeavysoftVersion.cs
