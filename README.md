@@ -9,12 +9,12 @@ Project file changes
     </PropertyGroup>
   ---
     <Target Name="BeforeBuild">
-      <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy RemoteSigned -Command &quot;&amp;{ $(ProjectDir)Properties\HeavysoftVersion.ps1 }&quot;" />
+      <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Bypass -Command &quot;&amp;{ $(ProjectDir)Properties\HeavysoftVersion.ps1 }&quot;" />
     </Target>
 You can also move the script to solution root directory and delete it from Properties.
 
     <Target Name="BeforeBuild">
-      <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy RemoteSigned -Command &quot;&amp;{ $(SolutionDir)HeavysoftVersion.ps1 }&quot;" />
+      <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Bypass -Command &quot;&amp;{ $(SolutionDir)HeavysoftVersion.ps1 }&quot;" />
     </Target>
 .gitignore
 ----------
