@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Heavysoft.VersionGenerator</id>
+    <version>1.1.0.0</version>
+    <authors>Heavysoft</authors>
+    <owners>Heavysoft</owners>
+    <licenseUrl>https://raw.githubusercontent.com/dermeister0/Heavysoft.VersionGenerator/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dermeister0/Heavysoft.VersionGenerator</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Assembly version number generator for Heavysoft projects.</description>
+    <copyright>Copyright © 2014-2015 Der_Meister</copyright>
+    <developmentDependency>true</developmentDependency>
+    <contentFiles>
+      <files include="cs/any/Properties/HeavysoftVersion.cs" buildAction="Compile" />
+      <files include="cs/any/Properties/HeavysoftVersion.cs.template" buildAction="None" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="tools/HeavysoftVersion.ps1" target="tools" />
+    <file src="cs/any/Properties/HeavysoftVersion.cs" target="Content/Properties" />
+    <file src="cs/any/Properties/HeavysoftVersion.cs.template" target="Content/Properties" />
+  </files>
+</package>

@@ -1,1 +1,1 @@
-nuget pack Heavysoft.VersionGenerator.nuspec
+nuget pack Nupkg\Heavysoft.VersionGenerator.nuspec

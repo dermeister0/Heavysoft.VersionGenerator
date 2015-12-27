@@ -10,16 +10,6 @@ $minor    = 0
 $revision = 0
 
 #-------------------------------------------------------------------------------
-# Displays how to use this script.
-#-------------------------------------------------------------------------------
-function Help {
-    "Sets the AssemblyVersion and AssemblyFileVersion of AssemblyInfo.cs files`n"
-    ".\SetVersion.ps1 [VersionNumber]`n"
-    "   [VersionNumber]     The version number to set, for example: 1.1.9301.0"
-    "                       If not provided, a version number will be generated.`n"
-}
-
-#-------------------------------------------------------------------------------
 # Generate a version number.
 # Note: customize this function to generate it using your version schema.
 #-------------------------------------------------------------------------------
@@ -57,17 +47,6 @@ function Update-AssemblyInfoFiles ([string] $version) {
     }
 }
 
-#-------------------------------------------------------------------------------
-# Parse arguments.
-#-------------------------------------------------------------------------------
-if ($args -ne $null) {
-    $version = $args[0]
-    if (($version -eq '/?') -or ($version -notmatch "[0-9]+(\.([0-9]+|\*)){1,3}")) {
-        Help
-        return;
-    }
-} else {
-    $version =  Generate-VersionNumber
-}
+$version =  Generate-VersionNumber
 
 Update-AssemblyInfoFiles $version
