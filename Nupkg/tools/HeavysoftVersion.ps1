@@ -30,6 +30,7 @@ if ($env:HVChangeset)
 {
     $changeset = $env:HVChangeset
     "$logPrefix Changeset: $changeset"
+    $changeset = "-$changeset"
 }
 
 $startDate = Get-Date -Date "2001-10-13 00:00:00Z"
@@ -48,7 +49,7 @@ Get-ChildItem -Recurse -Filter HeavysoftVersion.cs.template | ForEach-Object {
         % {$_ -replace '{minor}', $minor } |
         % {$_ -replace '{patch}', $patch } |
         % {$_ -replace '{build}', $build } |
-        % {$_ -replace '{changeset}', "-$changeset" }
+        % {$_ -replace '{changeset}', $changeset }
     } | Set-Content $outputName
     
     "$logPrefix Updated $outputName"

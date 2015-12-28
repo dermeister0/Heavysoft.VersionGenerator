@@ -17,3 +17,8 @@ Project file changes
 ----------
 
     HeavysoftVersion.cs
+
+Pass changeset to script
+------------------------
+
+    $env:HVChangeset = (git 'rev-parse' 'HEAD').SubString(0, 7)
