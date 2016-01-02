@@ -6,6 +6,13 @@ $minor = 0
 $patch = 0
 $changeset = ''
 
+trap
+{
+    Write-Output $_
+    $host.SetShouldExit(1)
+    exit
+}
+
 $logPrefix = '[Heavysoft.VersionGenerator]'
 
 if ($env:HVMajor)
